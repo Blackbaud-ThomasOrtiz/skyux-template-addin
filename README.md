@@ -1,2 +1,2 @@
 # skyux-template-addin
-Template for SKY add-ins created by the SKY UX CLI
+Template for SKY Add-ins created by the SKY UX CLI
