@@ -8,7 +8,9 @@ import {
 
 // Specify entry components, module-level providers, etc. here.
 @NgModule({
-  providers: [AddinClientService],
+  providers: [
+    AddinClientService
+  ],
   entryComponents: []
 })
 export class AppExtrasModule { }

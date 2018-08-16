@@ -19,7 +19,9 @@ import {
 export class MyTileComponent implements OnInit {
   public context: any;
 
-  constructor(private addinClientService: AddinClientService) {}
+  constructor(
+    private addinClientService: AddinClientService
+  ) {}
 
   public ngOnInit() {
     this.addinClientService.args.subscribe((args: AddinClientInitArgs) => {
