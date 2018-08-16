@@ -1,8 +1,16 @@
-import { NgModule } from '@angular/core';
+import {
+  NgModule
+} from '@angular/core';
+
+import {
+  AddinClientService
+} from '@blackbaud/skyux-lib-addin-client';
 
 // Specify entry components, module-level providers, etc. here.
 @NgModule({
-  providers: [],
+  providers: [
+    AddinClientService
+  ],
   entryComponents: []
 })
 export class AppExtrasModule { }
