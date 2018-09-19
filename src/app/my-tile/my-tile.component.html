@@ -18,4 +18,21 @@
     </a>
   </p>
 
+  <div>
+    <p>
+      The following button shows a modal:
+    </p>
+    <button type="button" class="sky-btn sky-btn-default" style="display: inline-block" (click)="showModal()">Show a modal</button>
+  </div>
+
+  <div *ngIf="modalResponse">
+    <p></p>
+    <sky-alert alertType="info" closeable="true">
+      The modal returned the following context:
+      <br />
+      <span>{{ modalResponse }}</span>
+    </sky-alert>
+  </div>
+
+
 </div>
