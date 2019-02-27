@@ -23,7 +23,7 @@ export class MyTileSettingsModalComponent {
   public save() {
     this.waitSvc.beginBlockingPageWait();
 
-    // simulate performing a save operation that takes 1 seconds
+    // simulate performing a save operation that takes 1 second
     // in order to persist these settings, you may want to send them to your backend, save in local storage, etc..
     setTimeout(() => {
       this.waitSvc.endBlockingPageWait();

@@ -6,9 +6,9 @@ import { MyTileSettingsContext } from './my-tile-settings-context';
 import { MyTileSettingsModalComponent } from './my-tile-settings-modal.component';
 
 @Component({
-    selector: 'my-tile-settings',
-    template: '',
-    styleUrls: ['./my-tile-settings.component.scss']
+  selector: 'my-tile-settings',
+  template: '',
+  styleUrls: ['./my-tile-settings.component.scss']
 })
 export class MyTileSettingsComponent implements OnInit {
   private context: MyTileSettingsContext;
