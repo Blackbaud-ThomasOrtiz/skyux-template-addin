@@ -1,11 +1,19 @@
 <div>
+  <p *ngIf="!closeHelp">
+    <sky-alert alertType="info" closeable="true" [closed]="closeHelp" (closedChange)="helpClosed()">
+      You can subscribe to the help click and provide additional help content to your users.
+    </sky-alert>
+  </p>
+
   <h1>{{ 'tile_header' | skyAppResources }}</h1>
 
-  <p>Welcome to the SKY UX Add-in template.</p>
+  <div *ngIf="showWelcomeMessage">
+    <p>Welcome to the SKY UX Add-in template.</p>
 
-  <sky-alert alertType="info">
-    You've just taken your first step into a larger world.
-  </sky-alert>
+    <sky-alert alertType="success">
+      You've just taken your first step into a larger world.
+    </sky-alert>
+  </div>
 
   <p>
     <a
