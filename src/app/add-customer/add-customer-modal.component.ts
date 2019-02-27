@@ -28,7 +28,7 @@ export class AddCustomerModalComponent {
   public save() {
     this.waitSvc.beginBlockingPageWait();
 
-    // simulate performing a save operation that takes 1 seconds
+    // simulate performing a save operation that takes 1 second
     setTimeout(() => {
       this.waitSvc.endBlockingPageWait();
       if (this.simulateErrorOnSave) {
